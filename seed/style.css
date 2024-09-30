@@ -12,6 +12,7 @@ button {
     cursor: pointer;
 }
 .click {
+     cursor: pointer;
     transition: all 300ms ease;
 }
 .click:hover {
@@ -32,6 +33,35 @@ section {
     margin-bottom: 12px;
     line-height: 1;
 }
+input , textarea {
+    background-color: #242424;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    border: 1px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 48px;
+    transition: all 300ms ease;
+}
+label {
+    font-weight: bold;
+    font-size: 12px;
+}
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
+input:hover, textarea:hover {
+    border-color: #dcdfe6;
+
+}
+input:focus, textarea:focus {
+    border-color: #f06449;
+}
+
 .container {
     padding: 50px 0;
     width: 100%;
@@ -216,15 +246,132 @@ Modal
 }
 .modal__half {
     width: 50%;
+    padding: 40px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 .modal__about {
     background-color: #fff;
+    
+}
+.modal__languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal__language {
+    width: 25%;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.modal__language:hover .language__name {
+    transform: scale(1);
+
+}
+.modal__language:hover {
+    transform: scale(0.9);
+    filter: brightness(80%);
+}
+.language__name {
+    bottom: -10px;
+    position: absolute;
+    transform: scale(0);
+    transition: all 300ms ease;
 }
 .modal__contact {
     background-color: #242424;
     color: white;
 }
+.see {
+    width: 100%;
+}
+.modal__title {
+    font-size: 26px;
+}
+.modal__sub-title {
+    margin: 12px 0 24px 0;
+    font-size: 14px;
+}
+.modal__para {
+    line-height: 1.75;
+    margin-bottom: 12px;
+}
+.form__item {
+    margin-bottom: 20px;
+}
+.form__submit {
+    background-color: #f06449;
+    border: 2px solid #f06449;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+.form__submit:hover {
+    border-color: #fff;
+    background-color: transparent;
+}
+.form__submit:active {
+    background-color: #f06449;
+    color: #f06449;
+}
+.modal__overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+    z-index: -1;
 
+}
+.modal__overlay--loading {
+    font-size: 80px;
+    z-index: -1;
+    background-color: #242424;
+   
+}
+.fa-spinner {
+    animation: spinner 750ms infinite linear;
+
+}
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: bold;
+    align-items: center;
+    padding: 28px;
+
+}
+.modal__exit {
+    position: absolute;
+    top: 30;
+    right: 40;
+    color: #fff;
+    font-size: 36px;
+    z-index: 100;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
 /*
 
 Projects
