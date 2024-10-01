@@ -333,17 +333,21 @@ Modal
     justify-content: center;
     align-items: center;
     font-size: 80px;
-    z-index: -1;
-
+    z-index: -1
+   
+    
 }
 .modal__overlay--loading {
     font-size: 80px;
-    z-index: -1;
-    background-color: #242424;
+ background-color: #242424;
    
+}
+.modal__overlay--visible {
+    z-index: 1;
 }
 .fa-spinner {
     animation: spinner 750ms infinite linear;
+    
 
 }
 .modal__overlay--success {
@@ -356,19 +360,20 @@ Modal
 }
 .modal__exit {
     position: absolute;
-    top: 30;
-    right: 40;
+    top: 30px;
+    right: 40px;
     color: #fff;
     font-size: 36px;
     z-index: 100;
 }
+
 
 @keyframes spinner {
     0% {
         transform: rotate(0);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
 
     }
 }
