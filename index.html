@@ -39,7 +39,7 @@
                     link__hover-effect--black
                     ">Projects</a>
                 </li>
-                <li class="nav__link"></li>
+                <li class="nav__link" onclick="toggleModal()"></li>
                     <a href="#" class="
                     nav__link--anchor
                     link__hover-effect
@@ -78,7 +78,7 @@
             </div>
 
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#Projects" class="scroll">
@@ -88,7 +88,7 @@
     </a>
     <div class="modal">
        <div class="modal__half modal__about">
-        <h3 class="modal__title">Here's a bit about me.</h3>
+        <h3 class="modal__title">Here's a bit more <b class="volor" onclick="toggleModal()">about me.</b></h3>
         <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
         <p class="modal__para">I am a 21 year old American <b class="volor">Frontend Software Engineer</b> with a strong passion for developing websites for great <b class="volor">user experiences.</b>
             <br>
@@ -114,12 +114,13 @@
         </div>
        </div>
        <div class="modal__half modal__contact">
+        <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
         <h3 class="modal__title modal__title--contact">Let's Have a Chat!
         </h3>
         <h4 class="modal__sub-title modal__sub-title--contact">
             I'm currently open to new opportunities and I would love to get in touch with you!
         </h4>
-        <form id="contact__form" onsubmit="contact()">
+        <form id="contact__form" onsubmit="contact(event)">
             <div class="form__item">
                 <label class="form__item--label">Name</label>
                 <input class="input" name="user_name" type="text" required></input>
@@ -137,14 +138,13 @@
 
             </button>
         </form>
-        <div class=" modal__overlay modal__overlay--loading">
+        <div class="modal__overlay modal__overlay--loading">
             <i class="fas fa-spinner"></i>
         </div>
         <div class="modal__overlay modal__overlay--success">
             Thanks for the message, looking forward to speaking to you soon.
         </div>
        </div>
-       <i class="fa-solid fa-xmark modal__exit click"></i>
     </div>
     </section>  
     <section id="Projects">
