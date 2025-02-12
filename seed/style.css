@@ -460,6 +460,18 @@ Projects
     width: 100%;
     transition: all 600ms ease;
 }
+.project__img2 {
+    width: 100%;
+    transition: all 600ms ease;
+}
+.project__img3 {
+    width: 100%;
+    transition: all 600ms ease;
+}
+.project__img4 {
+    width: 100%;
+    transition: all 600ms ease;
+}
 .project:hover .project__img {
     transform: scale(1.07);
     filter: blur(5px);
@@ -490,6 +502,19 @@ Projects
     transform: scale(1.07);
     filter: blur(5px);
 }
+.project__wrapper:hover .project__img2 {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+.project__wrapper:hover .project__img3 {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+.project__wrapper:hover .project__img4 {
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
 .project__wrapper:hover .project__wrapper--bg {
     opacity: 0.7;
 
@@ -528,6 +553,7 @@ footer {
     background-color: #242424;
     display: flex;
     padding: 6% 0;
+    height: 400px;
     position: relative;
 }
 .footer__row {

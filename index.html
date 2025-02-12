@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="./seed/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0736436fa0.js" crossorigin="anonymous"></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -18,13 +19,13 @@
    })();
 </script>
 </head>
-<body>
+<body data-aos-easing="ease-in-out">
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img id="personal-logo" src="./VAshae Blackwood.jpg" alt="">
             </figure>
-            <ul class="nav__link--list">
+            <ul data-aos="fade-left" data-aos-duration="1500" class="nav__link--list">
                 <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
                     nav__link--anchor
@@ -57,11 +58,11 @@
         </nav>
         <header class="header">
             <div class="header__content">
-                <h1 class="title">Hey </h1>
-                    <h1 class="title volor">I'm Vashae.</h1>
-                    <p class="header__para">I'm a <b class="volor">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.</p>
+                <h1 data-aos="fade-up" data-aos-duration="500" class="title">Hey </h1>
+                    <h1 data-aos="fade-up" data-aos-duration="1500" class="title volor">I'm Vashae.</h1>
+                    <p data-aos="fade-up" data-aos-duration="2000" class="header__para">I'm a <b class="volor">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.</p>
                     <br>
-                    <p class="header__para">Here's a bit more <b class="volor click" onclick="toggleModal()">about me.</b></p>
+                    <p data-aos="fade-up" data-aos-duration="500" class="header__para">Here's a bit more <b class="volor click" onclick="toggleModal()">about me.</b></p>
                     <div class="social__list">
                         <a href="https://github.com/Vashae" target="_blank" class="social__link click">
                             <i class="fa-brands fa-github"></i>
@@ -166,7 +167,7 @@
             </h1>
             <ul class="projects__list">
                 <li class="project">
-                    <div class="project__wrapper">
+                    <div data-aos="fade-up" data-aos-duration="1000" class="project__wrapper">
                         <img src="./Screenshot 2025-02-02 180100.png" class="project__img" alt="">
                         <div class="project__wrapper--bg"></div>
                         <div class="project__description">
@@ -191,8 +192,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project__wrapper">
-                        <img src="./Screenshot 2025-02-11 133308.png" class="project__img" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aso-delay="1500" class="project__wrapper">
+                        <img src="./Screenshot 2025-02-11 133308.png" class="project__img2" alt="">
                         <div class="project__wrapper--bg"></div>
                         <div class="project__description">
                             <h3 class="project__description--title">
@@ -216,8 +217,8 @@
                             </div>
                         </div>
                     </div>
-                     <div class="project__wrapper">
-                        <img src="./Screenshot 2025-02-02 154325.png" class="project__img" alt="">
+                     <div data-aos="fade-up" data-aos-duration="1000" data-aso-delay="1500" class="project__wrapper">
+                        <img src="./Screenshot 2025-02-02 154325.png" class="project__img3" alt="">
                         <div class="project__wrapper--bg"></div>
                         <div class="project__description">
                             <h3 class="project__description--title">
@@ -241,8 +242,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project__wrapper">
-                        <img src="./Screenshot 2025-02-02 204913.png" class="project__img" alt="">
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aso-delay="1500" class="project__wrapper">
+                        <img src="./Screenshot 2025-02-02 204913.png" class="project__img4" alt="">
                         <div class="project__wrapper--bg"></div>
                         <div class="project__description">
                             <h3 class="project__description--title">
@@ -312,6 +313,9 @@
         </div>
     </div> 
     </footer>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
